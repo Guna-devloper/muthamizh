@@ -1,0 +1,23 @@
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  color: #4CAF50;
+}
+
+.about p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.map {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.map iframe {
+  border-radius: 10px;
+}
