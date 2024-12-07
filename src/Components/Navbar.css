@@ -66,11 +66,6 @@
   background: #ff6347;
 }
 
-/* Content Style */
-.nav-content {
-  color: red;
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .navbar {
@@ -92,25 +87,38 @@
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-
   .navbar {
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
   }
 
   .logo {
     margin-bottom: 10px;
   }
 
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    background: hsl(123, 87%, 33%);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    display: none; /* Hidden by default */
+  }
+
+  .nav-links a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Shop button adjustments for smaller screens */
   .shop-btn {
     font-size: 0.85rem;
     padding: 5px 10px;
   }
 
-  /* Add a toggle button for mobile */
+  /* Toggle button for mobile */
   .nav-toggle {
     display: block;
     background: none;
@@ -118,22 +126,12 @@
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
+    margin-left: auto;
   }
 
-  /* Add styles for dropdown when toggle is active */
+  /* Display nav-links when active */
   .nav-links.active {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background: hsl(123, 87%, 33%);
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav-links a {
-    padding: 10px;
-    font-size: 1rem;
   }
 }
 
@@ -145,5 +143,21 @@
   .shop-btn {
     font-size: 0.8rem;
     padding: 4px 8px;
+  }
+
+  .nav-links {
+    display: flex; /* Ensure links are displayed on very small devices */
+    flex-direction: column;
+    gap: 5px;
+    background: hsl(123, 87%, 33%);
+    padding: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .nav-toggle {
+    font-size: 1.2rem;
   }
 }
