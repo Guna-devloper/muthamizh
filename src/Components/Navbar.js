@@ -15,7 +15,7 @@ function Navbar() {
         <Link to="/" className="nav-content">Muthamizh Essentials</Link>
       </div>
       <nav className="nav-links">
-        <Link to="/">Home1</Link>
+        <Link to="/">Home</Link>
         <Link to="/products">Products</Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
