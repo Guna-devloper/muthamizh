@@ -1,9 +1,13 @@
 import React from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../Assets/final-logo.png"; 
 
 function Navbar() {
+  const navigate = useNavigate()
+  const handleShop = () =>{
+    navigate("/products")
+  }
   return (
     <header className="navbar">
       <div className="logo">
@@ -15,7 +19,7 @@ function Navbar() {
         <Link to="/products">Products</Link>
         <Link to="/about">About Us</Link>
         <Link to="/contact">Contact</Link>
-        <button className="shop-btn">Shop Now</button>
+        <button className="shop-btn" onClick={handleShop}>Shop Now</button>
       </nav>
     </header>
   );
