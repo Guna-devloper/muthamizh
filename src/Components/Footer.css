@@ -1,22 +1,22 @@
 .footer {
   background: linear-gradient(to right, hsl(123, 87%, 33%), #ffda06);
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+}
+
+.footer a {
+  color: #f11313d5;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
   }
-  
-  .footer a {
-    color: #f11313d5;
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      font-size: 14px;
-    }
-  }
-  
+}
