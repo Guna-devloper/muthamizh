@@ -1,7 +1,12 @@
 import React from "react";
 import "./Home.css";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate()
+  const handleExplore = () =>{
+    navigate("/explore")
+  }
   return (
     <section id="home" className="home">
       <div className="banner">
@@ -10,7 +15,7 @@ function Home() {
         <p>Welcome to Muthamizh Essentials</p>
           <p>Experience the finest quality groceries at unbeatable prices!</p>
 
-          <button className="explore-btn">Explore Now</button>
+          <button className="explore-btn" onClick={handleExplore}>Explore Now</button>
         </div>
       </div>
       <div className="highlights">

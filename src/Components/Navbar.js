@@ -11,10 +11,10 @@ function Navbar() {
         <Link to="/" className="nav-content">Muthamizh Essentials</Link>
       </div>
       <nav className="nav-links">
-        <Link to="#home">Home</Link>
-        <Link to="#products">Products</Link>
-        <Link to="#about">About Us</Link>
-        <Link to="#contact">Contact</Link>
+        <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+        <Link to="/about">About Us</Link>
+        <Link to="/contact">Contact</Link>
         <button className="shop-btn">Shop Now</button>
       </nav>
     </header>

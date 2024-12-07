@@ -1,60 +1,39 @@
-.contact {
+.contact-page {
   padding: 20px;
-}
-
-.contact h2 {
-  color: #4CAF50;
   text-align: center;
 }
 
-.contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.contact-details {
-  flex: 1;
-  min-width: 300px;
+.contact-page h2 {
+  color: #008080;
+  margin-bottom: 20px;
 }
 
 .contact-form {
-  flex: 1;
-  min-width: 300px;
-}
-
-.contact-form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.contact-form label {
-  font-size: 16px;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  font-size: 16px;
+  border: 1px solid #ddd;
   border-radius: 5px;
 }
 
 .contact-form button {
-  background: #4CAF50;
+  padding: 10px 20px;
+  background-color: #008080;
   color: white;
   border: none;
-  padding: 10px;
   border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background: #45a049;
-}
-
-.map iframe {
-  border-radius: 10px;
+  background-color: #006666;
 }
