@@ -10,6 +10,7 @@
   z-index: 1000;
 }
 
+/* Logo Section */
 .logo {
   display: flex;
   align-items: center;
@@ -30,6 +31,7 @@
   font-weight: bold;
 }
 
+/* Navigation Links */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -48,6 +50,7 @@
   color: #ffcc00;
 }
 
+/* Shop Button */
 .shop-btn {
   padding: 8px 16px;
   background: #ff7f50;
@@ -63,6 +66,84 @@
   background: #ff6347;
 }
 
-.nav-content{
+/* Content Style */
+.nav-content {
   color: red;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .shop-btn {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .shop-btn {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  /* Add a toggle button for mobile */
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Add styles for dropdown when toggle is active */
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: hsl(123, 87%, 33%);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo a {
+    font-size: 1.2rem;
+  }
+
+  .shop-btn {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
 }
