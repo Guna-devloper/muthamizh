@@ -1,18 +1,20 @@
 import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import logo from "../Assets/final-logo.png"; 
 
 function Navbar() {
   return (
     <header className="navbar">
       <div className="logo">
-        <Link>Muthamizh Essentials</Link>
+        <img src={logo} alt="Muthamizh Essentials Logo" className="logo-img" />
+        <Link to="/" className="nav-content">Muthamizh Essentials</Link>
       </div>
       <nav className="nav-links">
-        <Link href="#home">Home</Link>
-        <Link href="#products">Products</Link>
-        <Link href="#about">About Us</Link>
-        <Link href="#contact">Contact</Link>
+        <Link to="#home">Home</Link>
+        <Link to="#products">Products</Link>
+        <Link to="#about">About Us</Link>
+        <Link to="#contact">Contact</Link>
         <button className="shop-btn">Shop Now</button>
       </nav>
     </header>
